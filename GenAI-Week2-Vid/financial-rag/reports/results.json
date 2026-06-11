@@ -1,0 +1,82 @@
+[
+  {
+    "label": "A",
+    "method": "fixed",
+    "reranker": false,
+    "metrics": {
+      "retrieval": {
+        "precision@k": 0.8609,
+        "recall@k": 1.0,
+        "mrr": 0.9348,
+        "k": 5,
+        "n": 23
+      },
+      "ragas": {
+        "faithfulness": 0.972,
+        "answer_relevancy": 0.9728,
+        "context_precision": 0.8116,
+        "context_recall": 0.9891
+      }
+    }
+  },
+  {
+    "label": "B",
+    "method": "fixed",
+    "reranker": true,
+    "metrics": {
+      "retrieval": {
+        "precision@k": 0.7826,
+        "recall@k": 1.0,
+        "mrr": 0.9565,
+        "k": 5,
+        "n": 23
+      },
+      "ragas": {
+        "faithfulness": 1.0,
+        "answer_relevancy": 0.9693,
+        "context_precision": 0.8952,
+        "context_recall": 0.9674
+      }
+    }
+  },
+  {
+    "label": "C",
+    "method": "semantic",
+    "reranker": false,
+    "metrics": {
+      "retrieval": {
+        "precision@k": 0.513,
+        "recall@k": 1.0,
+        "mrr": 0.913,
+        "k": 5,
+        "n": 23
+      },
+      "ragas": {
+        "faithfulness": 0.949,
+        "answer_relevancy": 0.9714,
+        "context_precision": 0.8152,
+        "context_recall": 1.0
+      }
+    }
+  },
+  {
+    "label": "D",
+    "method": "semantic",
+    "reranker": true,
+    "metrics": {
+      "retrieval": {
+        "precision@k": 0.4783,
+        "recall@k": 1.0,
+        "mrr": 0.9565,
+        "k": 5,
+        "n": 23
+      },
+      "ragas": {
+        "faithfulness": 0.9565,
+        "answer_relevancy": 0.9663,
+        "context_precision": 0.9493,
+        "context_recall": 1.0
+      }
+    }
+  }
+]
