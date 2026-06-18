@@ -1,0 +1,51 @@
+# ---- Secrets (NEVER commit) ----
+.env
+.env.*
+!.env.example
+backend/.env
+*.key
+*.pem
+
+# ---- Python ----
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+build/
+dist/
+.venv/
+venv/
+env/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+
+# ---- App data / runtime (regenerated; not source) ----
+*.db
+*.sqlite
+*.sqlite3
+backend/solarbilliq.db
+backend/uploads/
+backend/data/             # Docker volume runtime data
+# NOTE: data/samples/*.csv ARE tracked — they're test fixtures used in the docs.
+*.log
+mcp_debug.log
+
+# ---- Node / frontend ----
+node_modules/
+frontend/node_modules/
+frontend/dist/
+frontend/.vite/
+npm-debug.log*
+yarn-error.log*
+
+# ---- Editor / OS ----
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+*.swp
+
+# ---- Docker ----
+# (Dockerfiles + compose are tracked; build context noise is not)

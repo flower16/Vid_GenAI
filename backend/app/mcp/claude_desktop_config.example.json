@@ -1,0 +1,15 @@
+{
+  "_comment": "Add this under the 'mcpServers' key of your Claude Desktop config.",
+  "_location_windows": "%APPDATA%\\Claude\\claude_desktop_config.json",
+  "_location_macos": "~/Library/Application Support/Claude/claude_desktop_config.json",
+  "mcpServers": {
+    "solarbilliq": {
+      "command": "python",
+      "args": ["-m", "app.mcp.server"],
+      "cwd": "F:\\GenAI Week3 Project\\backend",
+      "env": {
+        "DATABASE_URL": "sqlite:///./solarbilliq.db"
+      }
+    }
+  }
+}

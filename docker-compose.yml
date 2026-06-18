@@ -1,0 +1,32 @@
+# One-command startup:  docker compose up --build
+# Frontend:  http://localhost:5173   Backend/docs:  http://localhost:8000/docs
+services:
+  backend:
+    build: ./backend
+    ports:
+      - "8000:8000"
+    environment:
+      # Persist SQLite DB + uploads on the named volume (survives restarts).
+      - DATABASE_URL=sqlite:////app/data/solarbilliq.db
+      - UPLOAD_DIR=/app/data/uploads
+    env_file:
+      # Optional — supplies ANTHROPIC/PINECONE/OPENAI keys if present.
+      - path: ./backend/.env
+        required: false
+    volumes:
+      - backend_data:/app/data
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:8000/health')"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  frontend:
+    build: ./frontend
+    ports:
+      - "5173:80"
+    depends_on:
+      - backend
+
+volumes:
+  backend_data:
