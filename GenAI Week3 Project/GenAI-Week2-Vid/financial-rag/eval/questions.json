@@ -1,0 +1,163 @@
+[
+  {
+    "id": "sec-01",
+    "category": "sec_filings",
+    "question": "What are the major risk factors identified by Acme Corporation?",
+    "ground_truth": "Supply chain disruptions, cybersecurity threats, regulatory and compliance risk, foreign currency risk, and competition.",
+    "relevant_docs": ["acme_corp_10k_2023"]
+  },
+  {
+    "id": "sec-02",
+    "category": "sec_filings",
+    "question": "What was Acme Corporation's total annual revenue for fiscal year 2023?",
+    "ground_truth": "Total revenue for fiscal year 2023 was $4.2 billion, an increase of 12% over $3.75 billion in 2022.",
+    "relevant_docs": ["acme_corp_10k_2023"]
+  },
+  {
+    "id": "sec-03",
+    "category": "sec_filings",
+    "question": "What litigation risks or legal proceedings were identified in the 10-K?",
+    "ground_truth": "A patent-infringement lawsuit filed by Beta Industries Inc. seeking about $50 million, and environmental remediation at a legacy Ohio site with a $7.5 million reserve.",
+    "relevant_docs": ["acme_corp_10k_2023"]
+  },
+  {
+    "id": "sec-04",
+    "category": "sec_filings",
+    "question": "What was Acme's net income and diluted earnings per share in 2023?",
+    "ground_truth": "Net income was $480 million, or $5.05 per diluted share.",
+    "relevant_docs": ["acme_corp_10k_2023"]
+  },
+  {
+    "id": "sec-05",
+    "category": "sec_filings",
+    "question": "How much exposure does Acme have to foreign currency, and what percentage of revenue is non-USD?",
+    "ground_truth": "Approximately 38% of revenue is denominated in currencies other than the U.S. dollar.",
+    "relevant_docs": ["acme_corp_10k_2023"]
+  },
+  {
+    "id": "sec-06",
+    "category": "sec_filings",
+    "question": "What reportable segments does Acme Corporation operate?",
+    "ground_truth": "Cloud Services, Industrial Automation, and Consumer Products.",
+    "relevant_docs": ["acme_corp_10k_2023"]
+  },
+  {
+    "id": "earn-01",
+    "category": "earnings_calls",
+    "question": "What growth drivers did management discuss on the Q4 2023 earnings call?",
+    "ground_truth": "Cloud Services grew 28% (now 35% of revenue), Asia-Pacific international expansion grew 24% with new Singapore and Tokyo data centers, and the AcmeAI platform drove a 15% increase in average contract value.",
+    "relevant_docs": ["acme_corp_q4_2023_earnings_call"]
+  },
+  {
+    "id": "earn-02",
+    "category": "earnings_calls",
+    "question": "What revenue guidance was provided for fiscal year 2024?",
+    "ground_truth": "Revenue guidance of $4.7 billion to $4.9 billion, representing approximately 12% to 17% growth.",
+    "relevant_docs": ["acme_corp_q4_2023_earnings_call"]
+  },
+  {
+    "id": "earn-03",
+    "category": "earnings_calls",
+    "question": "What earnings per share guidance did Acme give for 2024?",
+    "ground_truth": "Diluted EPS guidance of $5.10 to $5.30 for fiscal year 2024.",
+    "relevant_docs": ["acme_corp_q4_2023_earnings_call"]
+  },
+  {
+    "id": "earn-04",
+    "category": "earnings_calls",
+    "question": "How much capital expenditure does Acme plan for 2024 and for what purpose?",
+    "ground_truth": "Approximately $350 million, primarily for data-center expansion.",
+    "relevant_docs": ["acme_corp_q4_2023_earnings_call"]
+  },
+  {
+    "id": "earn-05",
+    "category": "earnings_calls",
+    "question": "What did management say about Cloud Services backlog and renewal rates?",
+    "ground_truth": "Backlog grew 31% year over year and renewal rates were above 95%.",
+    "relevant_docs": ["acme_corp_q4_2023_earnings_call"]
+  },
+  {
+    "id": "ins-01",
+    "category": "insurance_claims",
+    "question": "What coverage limits apply to the dwelling and personal property under the homeowners policy?",
+    "ground_truth": "Coverage A (Dwelling) is $400,000 and Coverage C (Personal Property) is $200,000.",
+    "relevant_docs": ["homeowners_policy_HG2024"]
+  },
+  {
+    "id": "ins-02",
+    "category": "insurance_claims",
+    "question": "What exclusions are relevant under the homeowners policy?",
+    "ground_truth": "Excluded causes include flood/surface water, earthquake/earth movement, war, intentional loss, neglect, and wear and tear/mold/rot.",
+    "relevant_docs": ["homeowners_policy_HG2024"]
+  },
+  {
+    "id": "ins-03",
+    "category": "insurance_claims",
+    "question": "What is the deductible on the homeowners policy?",
+    "ground_truth": "A $1,500 deductible applies to each covered loss, with a separate 2% wind/hail deductible in designated counties.",
+    "relevant_docs": ["homeowners_policy_HG2024"]
+  },
+  {
+    "id": "ins-04",
+    "category": "insurance_claims",
+    "question": "What are the insured's duties after a loss occurs?",
+    "ground_truth": "Give prompt notice, protect property from further damage, prepare an inventory of damaged property, and submit a signed sworn proof of loss within 60 days of request.",
+    "relevant_docs": ["homeowners_policy_HG2024"]
+  },
+  {
+    "id": "ins-05",
+    "category": "insurance_claims",
+    "question": "What is the personal liability coverage limit and medical payments limit?",
+    "ground_truth": "Personal liability is $300,000 per occurrence and medical payments to others is $5,000 per person.",
+    "relevant_docs": ["homeowners_policy_HG2024"]
+  },
+  {
+    "id": "loan-01",
+    "category": "loan_docs",
+    "question": "What is the interest rate on the term loan?",
+    "ground_truth": "Term SOFR plus an applicable margin of 3.25% per annum, increasing by 2.00% (default rate) during an Event of Default.",
+    "relevant_docs": ["term_loan_agreement_2024"]
+  },
+  {
+    "id": "loan-02",
+    "category": "loan_docs",
+    "question": "What financial covenants exist in the loan agreement?",
+    "ground_truth": "Leverage ratio not to exceed 3.50x, interest coverage ratio of at least 2.00x, minimum liquidity of $2,000,000, and a limitation on additional indebtedness above $1,000,000.",
+    "relevant_docs": ["term_loan_agreement_2024"]
+  },
+  {
+    "id": "loan-03",
+    "category": "loan_docs",
+    "question": "What are the events of default under the loan agreement?",
+    "ground_truth": "Payment default, covenant default, cross-default on debt over $500,000, insolvency/bankruptcy, and material misrepresentation.",
+    "relevant_docs": ["term_loan_agreement_2024"]
+  },
+  {
+    "id": "loan-04",
+    "category": "loan_docs",
+    "question": "What is the principal amount and maturity of the term loan?",
+    "ground_truth": "Principal of $25,000,000, maturing on the fifth anniversary of the Closing Date.",
+    "relevant_docs": ["term_loan_agreement_2024"]
+  },
+  {
+    "id": "loan-05",
+    "category": "loan_docs",
+    "question": "Can the borrower prepay the loan, and are there penalties?",
+    "ground_truth": "Yes, the borrower may prepay in whole or in part at any time without premium or penalty, on three business days' prior written notice.",
+    "relevant_docs": ["term_loan_agreement_2024"]
+  },
+  {
+    "id": "loan-06",
+    "category": "loan_docs",
+    "question": "What remedies does the lender have upon an event of default?",
+    "ground_truth": "The lender may declare all unpaid principal and accrued interest immediately due and payable and exercise all rights available under applicable law.",
+    "relevant_docs": ["term_loan_agreement_2024"]
+  },
+  {
+    "id": "cross-01",
+    "category": "sec_filings",
+    "question": "Does Acme Corporation disclose a quarterly dividend, and how much?",
+    "ground_truth": "Yes, the Board declared a quarterly dividend of $0.32 per share.",
+    "relevant_docs": ["acme_corp_10k_2023"]
+  }
+]
